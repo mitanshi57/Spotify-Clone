@@ -22,7 +22,8 @@
   </head>
   <body>
     <div class="main">
-      <div class="sidebar">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
         <div class="nav">
           <div class="nav-option" style="opacity: 1">
             <i class="fa-solid fa-house"></i>
@@ -36,10 +37,10 @@
         <div class="library">
           <div class="options">
             <div class="lib-option nav-option">
-              <img src="library_icon.png" />
+              <img src="library_icon.png" alt="Library" />
               <a href="#">Your Library</a>
             </div>
-            <div class="icons">
+            <div class="lib-icons">
               <i class="fa-solid fa-plus"></i>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -58,121 +59,137 @@
           </div>
         </div>
       </div>
+
+      <!-- Main Content -->
       <div class="main-content">
         <div class="sticky-nav">
-          <div class="nav-icons">
-            <img src="backward_icon.png" />
-            <img src="forward_icon.png" class="hide" />
+          <div class="sticky-left">
+            <!-- Hamburger for mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-icons">
+              <img src="backward_icon.png" alt="Back" />
+              <img src="forward_icon.png" class="hide-sm" alt="Forward" />
+            </div>
           </div>
           <div class="nav-options">
-            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item hide-md">Explore Premium</button>
             <button class="badge nav-item" id="dark-badge">
-              <i class="fa-solid fa-circle-down" style="margin-right: 5px"></i
-              >Install App
+              <i class="fa-solid fa-circle-down" style="margin-right: 5px"></i>
+              <span class="hide-sm">Install App</span>
             </button>
             <i class="fa-solid fa-user" id="one"></i>
           </div>
         </div>
+
         <h2>Recently Played</h2>
         <div class="cards-container">
           <div class="card">
-            <img src="card1img.jpeg" class="card-img" />
+            <img src="card1img.jpeg" class="card-img" alt="Top 50 Global" />
             <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">
-              Your daily updates of the most played tracks....
-            </p>
+            <p class="card-info">Your daily updates of the most played tracks....</p>
           </div>
         </div>
 
         <h2>Trending now near you</h2>
         <div class="cards-container">
           <div class="card">
-            <img src="card2img.jpeg" class="card-img" />
+            <img src="card2img.jpeg" class="card-img" alt="Mahiye Jinna Sona" />
             <p class="card-title">Mahiye Jinna Sona</p>
-            <p class="card-info">
-              Darshan Raval
-            </p>
+            <p class="card-info">Darshan Raval</p>
           </div>
           <div class="card">
-            <img src="card3img.jpeg" class="card-img" />
+            <img src="card3img.jpeg" class="card-img" alt="Mere Paas Tum Ho" />
             <p class="card-title">Mere Paas Tum Ho - Lofi Mix</p>
-            <p class="card-info">
-              Various Artists
-            </p>
+            <p class="card-info">Various Artists</p>
           </div>
           <div class="card">
-            <img src="card4img.jpeg" class="card-img" />
+            <img src="card4img.jpeg" class="card-img" alt="Anonymous" />
             <p class="card-title">Anonymous</p>
-            <p class="card-info">
-              Anonymous
-            </p>
+            <p class="card-info">Anonymous</p>
           </div>
         </div>
 
         <h2>Featured Charts</h2>
         <div class="cards-container">
           <div class="card">
-            <img src="card5img.jpeg" class="card-img" />
+            <img src="card5img.jpeg" class="card-img" alt="Top Songs Global" />
             <p class="card-title">Top Songs - Global</p>
-            <p class="card-info">
-              Your daily updates of the most played songs globally...
-            </p>
+            <p class="card-info">Your daily updates of the most played songs globally...</p>
           </div>
           <div class="card">
-            <img src="card6img.jpeg" class="card-img" />
+            <img src="card6img.jpeg" class="card-img" alt="Top 50 Global" />
             <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">
-              Your daily updates of the most played tracks....
-            </p>
+            <p class="card-info">Your daily updates of the most played tracks....</p>
           </div>
           <div class="card">
-            <img src="card1img.jpeg" class="card-img" />
+            <img src="card1img.jpeg" class="card-img" alt="Top 50 Global" />
             <p class="card-title">Top 50 - Global</p>
-            <p class="card-info">
-              50 Top favorites of the world...
-            </p>
-          </div>
-      </div>
-      <div class="footer">
-            <div class="line"></div>
+            <p class="card-info">50 Top favorites of the world...</p>
           </div>
         </div>
-      <div class="music-player">
-        <div class="album">
-                <img src="dooron.jpg" class="curr-play">
-                <div class="track-details">
-                    <span class="title">Dooron Dooron</span>
-                    <span class="artist">Paresh Pahuja</span>
-                </div>
-                <div class="icons">
-                    <i class="fa-regular fa-heart" style="margin-left: 0.5rem;"></i>
-                    <i class="fa-solid fa-computer"></i>
-                </div>
-            </div>
-        <div class="player">
-            <div class="player-controls">
-                <img src="player_icon1.png" class="player-control-icon">
-                <img src="player_icon2.png" class="player-control-icon">
-                <img src="player_icon3.png" class="player-control-icon" style="opacity : 1; height : 2rem">
-                <img src="player_icon4.png" class="player-control-icon">
-                <img src="player_icon5.png" class="player-control-icon">
 
-            </div>
-            <div class="playback-bar">
-                <span class="curr-time">00:00</span>
-                <input type="range" min="0" max="100" class="progress-bar" step="1">
-                <span class="total-time">3:33</span>
-            </div>
-        </div>
-        <div class="controls">
-            <i class="fa-solid fa-rectangle-list" style="color: white;"></i>
-            <i class="fa-solid fa-microphone" style="color: white;"></i>
-            <i class="fa-solid fa-sliders" style="color: white;"></i>
-            <i class="fa-solid fa-computer" style="color: white;"></i>
-            <i class="fa-solid fa-volume-high" style="color: white;"></i>
-            <input type="range" min="0" max="100" class="sound-bar" step="1" style="margin-right: 0.8rem;">
+        <div class="footer">
+          <div class="line"></div>
         </div>
       </div>
     </div>
+
+    <!-- Overlay for mobile sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+      <div class="album">
+        <img src="dooron.jpg" class="curr-play" alt="Now Playing" />
+        <div class="track-details">
+          <span class="title">Dooron Dooron</span>
+          <span class="artist">Paresh Pahuja</span>
+        </div>
+        <div class="album-icons">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-computer hide-sm"></i>
+        </div>
+      </div>
+
+      <div class="player">
+        <div class="player-controls">
+          <img src="player_icon1.png" class="player-control-icon" alt="Shuffle" />
+          <img src="player_icon2.png" class="player-control-icon" alt="Prev" />
+          <img src="player_icon3.png" class="player-control-icon play-btn" alt="Play" />
+          <img src="player_icon4.png" class="player-control-icon" alt="Next" />
+          <img src="player_icon5.png" class="player-control-icon" alt="Repeat" />
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">00:00</span>
+          <input type="range" min="0" max="100" class="progress-bar" step="1" />
+          <span class="total-time">3:33</span>
+        </div>
+      </div>
+
+      <div class="controls hide-sm">
+        <i class="fa-solid fa-rectangle-list"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-sliders"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <input type="range" min="0" max="100" class="sound-bar" step="1" />
+      </div>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+
+      function toggleSidebar() {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('active');
+      }
+
+      hamburger.addEventListener('click', toggleSidebar);
+      overlay.addEventListener('click', toggleSidebar);
+    </script>
   </body>
 </html>
